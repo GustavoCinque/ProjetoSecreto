@@ -12,6 +12,16 @@
 		AD614C671FFFFF20002DC400 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD614C601FFFFF20002DC400 /* Assets.xcassets */; };
 		AD614C681FFFFF20002DC400 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD614C621FFFFF20002DC400 /* LaunchScreen.storyboard */; };
 		AD614C691FFFFF20002DC400 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD614C641FFFFF20002DC400 /* Main.storyboard */; };
+		AD614C9B2000E02A002DC400 /* ProjetoSecreto.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AD614C942000E02A002DC400 /* ProjetoSecreto.xcdatamodeld */; };
+		AD614C9C2000E02A002DC400 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AD614C982000E02A002DC400 /* AppDelegate.m */; };
+		AD614C9D2000E02A002DC400 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AD614C992000E02A002DC400 /* main.m */; };
+		AD614CAC2000E1E8002DC400 /* CategoriaTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD614CA82000E1E8002DC400 /* CategoriaTableController.m */; };
+		AD614CAD2000E1E8002DC400 /* PrincipalController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD614CAB2000E1E8002DC400 /* PrincipalController.m */; };
+		AD614CCB2000EBC5002DC400 /* CategoriaDao.m in Sources */ = {isa = PBXBuildFile; fileRef = AD614CCA2000EBC5002DC400 /* CategoriaDao.m */; };
+		AD614CD02000F510002DC400 /* CategoriaTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AD614CCE2000F510002DC400 /* CategoriaTableCell.m */; };
+		AD614CD12000F510002DC400 /* CategoriaTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD614CCF2000F510002DC400 /* CategoriaTableCell.xib */; };
+		AD614CD52000FCFA002DC400 /* CategoriaService.m in Sources */ = {isa = PBXBuildFile; fileRef = AD614CD42000FCFA002DC400 /* CategoriaService.m */; };
+		AD614CD82000FD2E002DC400 /* Categoria.m in Sources */ = {isa = PBXBuildFile; fileRef = AD614CD72000FD2E002DC400 /* Categoria.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +31,23 @@
 		AD614C601FFFFF20002DC400 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AD614C631FFFFF20002DC400 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AD614C651FFFFF20002DC400 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AD614C952000E02A002DC400 /* ProjetoSecreto.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ProjetoSecreto.xcdatamodel; sourceTree = "<group>"; };
+		AD614C972000E02A002DC400 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		AD614C982000E02A002DC400 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		AD614C992000E02A002DC400 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AD614CA72000E1E8002DC400 /* CategoriaTableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoriaTableController.h; sourceTree = "<group>"; };
+		AD614CA82000E1E8002DC400 /* CategoriaTableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoriaTableController.m; sourceTree = "<group>"; };
+		AD614CAA2000E1E8002DC400 /* PrincipalController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrincipalController.h; sourceTree = "<group>"; };
+		AD614CAB2000E1E8002DC400 /* PrincipalController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrincipalController.m; sourceTree = "<group>"; };
+		AD614CC92000EBC5002DC400 /* CategoriaDao.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoriaDao.h; sourceTree = "<group>"; };
+		AD614CCA2000EBC5002DC400 /* CategoriaDao.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoriaDao.m; sourceTree = "<group>"; };
+		AD614CCD2000F510002DC400 /* CategoriaTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoriaTableCell.h; sourceTree = "<group>"; };
+		AD614CCE2000F510002DC400 /* CategoriaTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoriaTableCell.m; sourceTree = "<group>"; };
+		AD614CCF2000F510002DC400 /* CategoriaTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CategoriaTableCell.xib; sourceTree = "<group>"; };
+		AD614CD32000FCFA002DC400 /* CategoriaService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoriaService.h; sourceTree = "<group>"; };
+		AD614CD42000FCFA002DC400 /* CategoriaService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoriaService.m; sourceTree = "<group>"; };
+		AD614CD62000FD2E002DC400 /* Categoria.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Categoria.h; sourceTree = "<group>"; };
+		AD614CD72000FD2E002DC400 /* Categoria.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Categoria.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +80,7 @@
 		AD614C411FFFFCDF002DC400 /* ProjetoSecreto */ = {
 			isa = PBXGroup;
 			children = (
+				AD614C902000E02A002DC400 /* Sources */,
 				AD614C5C1FFFFF20002DC400 /* Config */,
 				AD614C5E1FFFFF20002DC400 /* Resources */,
 				AD614C611FFFFF20002DC400 /* UserInterface */,
@@ -100,6 +128,111 @@
 				AD614C641FFFFF20002DC400 /* Main.storyboard */,
 			);
 			path = UserInterface;
+			sourceTree = "<group>";
+		};
+		AD614C902000E02A002DC400 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				AD614CD22000FCEB002DC400 /* Services */,
+				AD614CAF2000E4D1002DC400 /* Model */,
+				AD614C912000E02A002DC400 /* Controllers */,
+				AD614C922000E02A002DC400 /* Dao */,
+				AD614C962000E02A002DC400 /* Misc */,
+				AD614C9A2000E02A002DC400 /* Utils */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		AD614C912000E02A002DC400 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AD614CA62000E1E8002DC400 /* CategoriaTableController */,
+				AD614CA92000E1E8002DC400 /* PrincipalController */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		AD614C922000E02A002DC400 /* Dao */ = {
+			isa = PBXGroup;
+			children = (
+				AD614C932000E02A002DC400 /* Coredata */,
+				AD614CC92000EBC5002DC400 /* CategoriaDao.h */,
+				AD614CCA2000EBC5002DC400 /* CategoriaDao.m */,
+			);
+			path = Dao;
+			sourceTree = "<group>";
+		};
+		AD614C932000E02A002DC400 /* Coredata */ = {
+			isa = PBXGroup;
+			children = (
+				AD614C942000E02A002DC400 /* ProjetoSecreto.xcdatamodeld */,
+			);
+			path = Coredata;
+			sourceTree = "<group>";
+		};
+		AD614C962000E02A002DC400 /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				AD614C972000E02A002DC400 /* AppDelegate.h */,
+				AD614C982000E02A002DC400 /* AppDelegate.m */,
+				AD614C992000E02A002DC400 /* main.m */,
+			);
+			path = Misc;
+			sourceTree = "<group>";
+		};
+		AD614C9A2000E02A002DC400 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		AD614CA62000E1E8002DC400 /* CategoriaTableController */ = {
+			isa = PBXGroup;
+			children = (
+				AD614CCC2000F4F0002DC400 /* CategoriaCell */,
+				AD614CA72000E1E8002DC400 /* CategoriaTableController.h */,
+				AD614CA82000E1E8002DC400 /* CategoriaTableController.m */,
+			);
+			path = CategoriaTableController;
+			sourceTree = "<group>";
+		};
+		AD614CA92000E1E8002DC400 /* PrincipalController */ = {
+			isa = PBXGroup;
+			children = (
+				AD614CAA2000E1E8002DC400 /* PrincipalController.h */,
+				AD614CAB2000E1E8002DC400 /* PrincipalController.m */,
+			);
+			path = PrincipalController;
+			sourceTree = "<group>";
+		};
+		AD614CAF2000E4D1002DC400 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AD614CD62000FD2E002DC400 /* Categoria.h */,
+				AD614CD72000FD2E002DC400 /* Categoria.m */,
+			);
+			name = Model;
+			path = ProjetoSecreto/Model;
+			sourceTree = SOURCE_ROOT;
+		};
+		AD614CCC2000F4F0002DC400 /* CategoriaCell */ = {
+			isa = PBXGroup;
+			children = (
+				AD614CCD2000F510002DC400 /* CategoriaTableCell.h */,
+				AD614CCE2000F510002DC400 /* CategoriaTableCell.m */,
+				AD614CCF2000F510002DC400 /* CategoriaTableCell.xib */,
+			);
+			path = CategoriaCell;
+			sourceTree = "<group>";
+		};
+		AD614CD22000FCEB002DC400 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				AD614CD32000FCFA002DC400 /* CategoriaService.h */,
+				AD614CD42000FCFA002DC400 /* CategoriaService.m */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,6 +296,7 @@
 				AD614C681FFFFF20002DC400 /* LaunchScreen.storyboard in Resources */,
 				AD614C671FFFFF20002DC400 /* Assets.xcassets in Resources */,
 				AD614C661FFFFF20002DC400 /* Info.plist in Resources */,
+				AD614CD12000F510002DC400 /* CategoriaTableCell.xib in Resources */,
 				AD614C691FFFFF20002DC400 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -174,7 +308,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD614CAC2000E1E8002DC400 /* CategoriaTableController.m in Sources */,
+				AD614CD82000FD2E002DC400 /* Categoria.m in Sources */,
 				AD614C441FFFFCDF002DC400 /* main.m in Sources */,
+				AD614CCB2000EBC5002DC400 /* CategoriaDao.m in Sources */,
+				AD614C9B2000E02A002DC400 /* ProjetoSecreto.xcdatamodeld in Sources */,
+				AD614C9D2000E02A002DC400 /* main.m in Sources */,
+				AD614CAD2000E1E8002DC400 /* PrincipalController.m in Sources */,
+				AD614CD02000F510002DC400 /* CategoriaTableCell.m in Sources */,
+				AD614C9C2000E02A002DC400 /* AppDelegate.m in Sources */,
+				AD614CD52000FCFA002DC400 /* CategoriaService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,8 +474,22 @@
 				AD614C5B1FFFFCDF002DC400 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		AD614C942000E02A002DC400 /* ProjetoSecreto.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				AD614C952000E02A002DC400 /* ProjetoSecreto.xcdatamodel */,
+			);
+			currentVersion = AD614C952000E02A002DC400 /* ProjetoSecreto.xcdatamodel */;
+			path = ProjetoSecreto.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = AD614C371FFFFCDF002DC400 /* Project object */;
 }
