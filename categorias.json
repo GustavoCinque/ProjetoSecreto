@@ -1,0 +1,14 @@
+{
+  "categorias": [
+      {
+        "descricao": "Categoria Receita",
+        "id": 1,
+        "tipoEntrada": "RECEITA"
+      },
+      {
+        "descricao": "Categoria Despesa",
+        "id": 1,
+        "tipoEntrada": "DESPESA"
+      }
+    ]
+}

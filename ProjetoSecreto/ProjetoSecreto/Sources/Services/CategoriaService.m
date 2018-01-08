@@ -11,8 +11,8 @@
 
 @implementation CategoriaService
 
-+ (void) carregarCategorias:(void (^)(NSArray<Carro *> *, NSError *)) metodoParaRetorno{
-    NSURL *url = [NSURL URLWithString:urlString];
++ (void) carregarCategorias:(void (^)(NSArray<Categoria *> *, NSError *)) metodoParaRetorno{
+    NSURL *url = [NSURL URLWithString:];
     
     [[[NSURLSession sharedSession] dataTaskWithURL:url completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
         
