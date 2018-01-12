@@ -7,7 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "JSON"
 
 @interface Categoria : NSObject
+
+@end
+
+@implementation Categorias
 
 @end
