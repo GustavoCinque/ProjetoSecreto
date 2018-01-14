@@ -7,12 +7,21 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "JSON"
+#import "JSONAPI.h"
 
-@interface Categoria : NSObject
+@interface Categoria : JSONModel
+
+@property(nonatomic, strong) NSString *descricao;
+@property(nonatomic, strong) NSNumber *idCategoria;
+@property(nonatomic, strong) NSString *tipoEntrada;
 
 @end
 
-@implementation Categorias
+@protocol Categoria
+@end
+
+@interface Categorias : JSONModel
+
+@property(nonatomic, strong) NSMutableArray<Categoria> *categorias;
 
 @end
