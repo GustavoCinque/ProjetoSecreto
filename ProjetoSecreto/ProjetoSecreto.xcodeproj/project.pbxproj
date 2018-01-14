@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AD614C441FFFFCDF002DC400 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AD614C431FFFFCDF002DC400 /* main.m */; };
+		30CA36ED200B968600CE8CD3 /* CargaCategoriaStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30CA36EC200B968600CE8CD3 /* CargaCategoriaStoryboard.storyboard */; };
+		30CA36F1200B979A00CE8CD3 /* CargaCategoriaStoryboardController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30CA36F0200B979A00CE8CD3 /* CargaCategoriaStoryboardController.m */; };
 		AD614C661FFFFF20002DC400 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AD614C5D1FFFFF20002DC400 /* Info.plist */; };
 		AD614C671FFFFF20002DC400 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD614C601FFFFF20002DC400 /* Assets.xcassets */; };
 		AD614C681FFFFF20002DC400 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD614C621FFFFF20002DC400 /* LaunchScreen.storyboard */; };
@@ -15,11 +16,8 @@
 		AD614C9B2000E02A002DC400 /* ProjetoSecreto.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AD614C942000E02A002DC400 /* ProjetoSecreto.xcdatamodeld */; };
 		AD614C9C2000E02A002DC400 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AD614C982000E02A002DC400 /* AppDelegate.m */; };
 		AD614C9D2000E02A002DC400 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AD614C992000E02A002DC400 /* main.m */; };
-		AD614CAC2000E1E8002DC400 /* CategoriaTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD614CA82000E1E8002DC400 /* CategoriaTableController.m */; };
 		AD614CAD2000E1E8002DC400 /* PrincipalController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD614CAB2000E1E8002DC400 /* PrincipalController.m */; };
 		AD614CCB2000EBC5002DC400 /* CategoriaDao.m in Sources */ = {isa = PBXBuildFile; fileRef = AD614CCA2000EBC5002DC400 /* CategoriaDao.m */; };
-		AD614CD02000F510002DC400 /* CategoriaTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AD614CCE2000F510002DC400 /* CategoriaTableCell.m */; };
-		AD614CD12000F510002DC400 /* CategoriaTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD614CCF2000F510002DC400 /* CategoriaTableCell.xib */; };
 		AD614CD52000FCFA002DC400 /* CategoriaService.m in Sources */ = {isa = PBXBuildFile; fileRef = AD614CD42000FCFA002DC400 /* CategoriaService.m */; };
 		AD614CD82000FD2E002DC400 /* Categoria.m in Sources */ = {isa = PBXBuildFile; fileRef = AD614CD72000FD2E002DC400 /* Categoria.m */; };
 		ADF5E2702003FFB100886A3E /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ADF5E2572003FFB100886A3E /* Info.plist */; };
@@ -31,12 +29,13 @@
 		ADF5E2762003FFB100886A3E /* JSONModel+networking.m in Sources */ = {isa = PBXBuildFile; fileRef = ADF5E2672003FFB100886A3E /* JSONModel+networking.m */; };
 		ADF5E2772003FFB100886A3E /* JSONKeyMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = ADF5E26A2003FFB100886A3E /* JSONKeyMapper.m */; };
 		ADF5E2782003FFB100886A3E /* JSONValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = ADF5E26C2003FFB100886A3E /* JSONValueTransformer.m */; };
-		ADF5E2792003FFB100886A3E /* SMXMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = ADF5E26F2003FFB100886A3E /* SMXMLDocument.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		30CA36EC200B968600CE8CD3 /* CargaCategoriaStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CargaCategoriaStoryboard.storyboard; sourceTree = "<group>"; };
+		30CA36EF200B979A00CE8CD3 /* CargaCategoriaStoryboardController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CargaCategoriaStoryboardController.h; sourceTree = "<group>"; };
+		30CA36F0200B979A00CE8CD3 /* CargaCategoriaStoryboardController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CargaCategoriaStoryboardController.m; sourceTree = "<group>"; };
 		AD614C3F1FFFFCDF002DC400 /* ProjetoSecreto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjetoSecreto.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		AD614C431FFFFCDF002DC400 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AD614C5D1FFFFF20002DC400 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AD614C601FFFFF20002DC400 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AD614C631FFFFF20002DC400 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -44,16 +43,11 @@
 		AD614C952000E02A002DC400 /* ProjetoSecreto.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ProjetoSecreto.xcdatamodel; sourceTree = "<group>"; };
 		AD614C972000E02A002DC400 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AD614C982000E02A002DC400 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		AD614C992000E02A002DC400 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		AD614CA72000E1E8002DC400 /* CategoriaTableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoriaTableController.h; sourceTree = "<group>"; };
-		AD614CA82000E1E8002DC400 /* CategoriaTableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoriaTableController.m; sourceTree = "<group>"; };
+		AD614C992000E02A002DC400 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Sources/Misc/main.m; sourceTree = "<group>"; };
 		AD614CAA2000E1E8002DC400 /* PrincipalController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrincipalController.h; sourceTree = "<group>"; };
 		AD614CAB2000E1E8002DC400 /* PrincipalController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrincipalController.m; sourceTree = "<group>"; };
 		AD614CC92000EBC5002DC400 /* CategoriaDao.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoriaDao.h; sourceTree = "<group>"; };
 		AD614CCA2000EBC5002DC400 /* CategoriaDao.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoriaDao.m; sourceTree = "<group>"; };
-		AD614CCD2000F510002DC400 /* CategoriaTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoriaTableCell.h; sourceTree = "<group>"; };
-		AD614CCE2000F510002DC400 /* CategoriaTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoriaTableCell.m; sourceTree = "<group>"; };
-		AD614CCF2000F510002DC400 /* CategoriaTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CategoriaTableCell.xib; sourceTree = "<group>"; };
 		AD614CD32000FCFA002DC400 /* CategoriaService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoriaService.h; sourceTree = "<group>"; };
 		AD614CD42000FCFA002DC400 /* CategoriaService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoriaService.m; sourceTree = "<group>"; };
 		AD614CD62000FD2E002DC400 /* Categoria.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Categoria.h; sourceTree = "<group>"; };
@@ -77,8 +71,6 @@
 		ADF5E26A2003FFB100886A3E /* JSONKeyMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKeyMapper.m; sourceTree = "<group>"; };
 		ADF5E26B2003FFB100886A3E /* JSONValueTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONValueTransformer.h; sourceTree = "<group>"; };
 		ADF5E26C2003FFB100886A3E /* JSONValueTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONValueTransformer.m; sourceTree = "<group>"; };
-		ADF5E26E2003FFB100886A3E /* SMXMLDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMXMLDocument.h; sourceTree = "<group>"; };
-		ADF5E26F2003FFB100886A3E /* SMXMLDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMXMLDocument.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +84,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		30CA36EE200B975800CE8CD3 /* CargaCategoriaStoryboard */ = {
+			isa = PBXGroup;
+			children = (
+				30CA36EF200B979A00CE8CD3 /* CargaCategoriaStoryboardController.h */,
+				30CA36F0200B979A00CE8CD3 /* CargaCategoriaStoryboardController.m */,
+			);
+			path = CargaCategoriaStoryboard;
+			sourceTree = "<group>";
+		};
 		AD614C361FFFFCDF002DC400 = {
 			isa = PBXGroup;
 			children = (
@@ -123,7 +124,7 @@
 		AD614C421FFFFCDF002DC400 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				AD614C431FFFFCDF002DC400 /* main.m */,
+				AD614C992000E02A002DC400 /* main.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -158,6 +159,7 @@
 			children = (
 				AD614C621FFFFF20002DC400 /* LaunchScreen.storyboard */,
 				AD614C641FFFFF20002DC400 /* Main.storyboard */,
+				30CA36EC200B968600CE8CD3 /* CargaCategoriaStoryboard.storyboard */,
 			);
 			path = UserInterface;
 			sourceTree = "<group>";
@@ -178,7 +180,7 @@
 		AD614C912000E02A002DC400 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				AD614CA62000E1E8002DC400 /* CategoriaTableController */,
+				30CA36EE200B975800CE8CD3 /* CargaCategoriaStoryboard */,
 				AD614CA92000E1E8002DC400 /* PrincipalController */,
 			);
 			path = Controllers;
@@ -207,7 +209,6 @@
 			children = (
 				AD614C972000E02A002DC400 /* AppDelegate.h */,
 				AD614C982000E02A002DC400 /* AppDelegate.m */,
-				AD614C992000E02A002DC400 /* main.m */,
 			);
 			path = Misc;
 			sourceTree = "<group>";
@@ -217,16 +218,6 @@
 			children = (
 			);
 			path = Utils;
-			sourceTree = "<group>";
-		};
-		AD614CA62000E1E8002DC400 /* CategoriaTableController */ = {
-			isa = PBXGroup;
-			children = (
-				AD614CCC2000F4F0002DC400 /* CategoriaCell */,
-				AD614CA72000E1E8002DC400 /* CategoriaTableController.h */,
-				AD614CA82000E1E8002DC400 /* CategoriaTableController.m */,
-			);
-			path = CategoriaTableController;
 			sourceTree = "<group>";
 		};
 		AD614CA92000E1E8002DC400 /* PrincipalController */ = {
@@ -248,16 +239,6 @@
 			path = ProjetoSecreto/Model;
 			sourceTree = SOURCE_ROOT;
 		};
-		AD614CCC2000F4F0002DC400 /* CategoriaCell */ = {
-			isa = PBXGroup;
-			children = (
-				AD614CCD2000F510002DC400 /* CategoriaTableCell.h */,
-				AD614CCE2000F510002DC400 /* CategoriaTableCell.m */,
-				AD614CCF2000F510002DC400 /* CategoriaTableCell.xib */,
-			);
-			path = CategoriaCell;
-			sourceTree = "<group>";
-		};
 		AD614CD22000FCEB002DC400 /* Services */ = {
 			isa = PBXGroup;
 			children = (
@@ -271,7 +252,6 @@
 			isa = PBXGroup;
 			children = (
 				ADF5E2562003FFB100886A3E /* JSONModel */,
-				ADF5E26D2003FFB100886A3E /* XMLDocument */,
 			);
 			path = Dependencies;
 			sourceTree = "<group>";
@@ -324,15 +304,6 @@
 				ADF5E26C2003FFB100886A3E /* JSONValueTransformer.m */,
 			);
 			path = JSONModelTransformations;
-			sourceTree = "<group>";
-		};
-		ADF5E26D2003FFB100886A3E /* XMLDocument */ = {
-			isa = PBXGroup;
-			children = (
-				ADF5E26E2003FFB100886A3E /* SMXMLDocument.h */,
-				ADF5E26F2003FFB100886A3E /* SMXMLDocument.m */,
-			);
-			path = XMLDocument;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -393,11 +364,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30CA36ED200B968600CE8CD3 /* CargaCategoriaStoryboard.storyboard in Resources */,
 				AD614C681FFFFF20002DC400 /* LaunchScreen.storyboard in Resources */,
 				AD614C671FFFFF20002DC400 /* Assets.xcassets in Resources */,
 				ADF5E2702003FFB100886A3E /* Info.plist in Resources */,
 				AD614C661FFFFF20002DC400 /* Info.plist in Resources */,
-				AD614CD12000F510002DC400 /* CategoriaTableCell.xib in Resources */,
 				AD614C691FFFFF20002DC400 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -411,9 +382,7 @@
 			files = (
 				ADF5E2752003FFB100886A3E /* JSONHTTPClient.m in Sources */,
 				ADF5E2742003FFB100886A3E /* JSONAPI.m in Sources */,
-				AD614CAC2000E1E8002DC400 /* CategoriaTableController.m in Sources */,
 				AD614CD82000FD2E002DC400 /* Categoria.m in Sources */,
-				AD614C441FFFFCDF002DC400 /* main.m in Sources */,
 				AD614CCB2000EBC5002DC400 /* CategoriaDao.m in Sources */,
 				AD614C9B2000E02A002DC400 /* ProjetoSecreto.xcdatamodeld in Sources */,
 				ADF5E2722003FFB100886A3E /* JSONModelClassProperty.m in Sources */,
@@ -422,8 +391,7 @@
 				ADF5E2712003FFB100886A3E /* JSONModel.m in Sources */,
 				ADF5E2782003FFB100886A3E /* JSONValueTransformer.m in Sources */,
 				ADF5E2772003FFB100886A3E /* JSONKeyMapper.m in Sources */,
-				AD614CD02000F510002DC400 /* CategoriaTableCell.m in Sources */,
-				ADF5E2792003FFB100886A3E /* SMXMLDocument.m in Sources */,
+				30CA36F1200B979A00CE8CD3 /* CargaCategoriaStoryboardController.m in Sources */,
 				ADF5E2732003FFB100886A3E /* JSONModelError.m in Sources */,
 				AD614C9C2000E02A002DC400 /* AppDelegate.m in Sources */,
 				AD614CD52000FCFA002DC400 /* CategoriaService.m in Sources */,

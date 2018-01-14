@@ -7,13 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Categoria+CoreDataClass.m"
+#import "DBCategoria+CoreDataClass.h"
 
 @interface CategoriaDao : NSObject
 
-+ (Categoria*) newInstance;
-+ (BOOL) salvar:(Categoria*) categoria;
-+ (void) remover:(Categoria*) categoria;
-+ (NSMutableArray*) pesquisarTodos:(NSManagedObjectContext*) context;
+- (BOOL) salvar:(DBCategoria*) categoria;
+- (void) remover:(DBCategoria*) categoria;
+- (NSArray<DBCategoria*>*) pesquisarTodos:(NSManagedObjectContext*) context;
 
 @end

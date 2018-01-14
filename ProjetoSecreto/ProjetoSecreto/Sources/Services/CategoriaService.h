@@ -7,7 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Categoria.h"
 
 @interface CategoriaService : NSObject
+
+- (void) carregarPrimeiraCargaCategorias:(void (^)(NSArray<Categoria *> *, NSError *)) metodoParaRetorno;
+- (void) carregarSegundaCargaCategorias:(void (^)(NSArray<Categoria *> *, NSError *)) metodoParaRetorno;
 
 @end
