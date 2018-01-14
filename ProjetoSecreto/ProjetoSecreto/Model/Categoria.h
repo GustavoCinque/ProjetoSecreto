@@ -12,7 +12,7 @@
 @interface Categoria : JSONModel
 
 @property(nonatomic, strong) NSString *descricao;
-@property(nonatomic, strong) NSString *idCategoria;
+@property(nonatomic, strong) NSNumber *idCategoria;
 @property(nonatomic, strong) NSString *tipoEntrada;
 
 @end
