@@ -11,6 +11,8 @@
             NSError *jsonError = nil;
             Categorias *categorias = [[Categorias alloc] initWithData:data error:&jsonError];
             
+            NSLog(@"%@", data);
+            
             if(!jsonError) {
                 dispatch_async(dispatch_get_main_queue(), ^{
                     metodoParaRetorno(categorias.categorias, nil);
