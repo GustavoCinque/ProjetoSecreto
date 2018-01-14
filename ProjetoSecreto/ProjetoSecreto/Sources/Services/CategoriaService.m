@@ -47,7 +47,7 @@
 
         } else {
             NSLog(@"Erro ao ler json: %@", error);
-        }
+        }	
         
     }] resume];
 }
