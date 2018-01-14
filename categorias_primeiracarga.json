@@ -1,12 +1,12 @@
 {
   "categorias": [
     {
-      "descricao": "Receita de primeira carga",
+      "descricao": "Primeira carga - Receita“,
       "idCategoria": 1,
       "tipoEntrada": "RECEITA"
     },
     {
-      “descricao": "Despesa de primeira carga",
+      “descricao": "Primeira carga - Despesa”,
       "idCategoria": 2,
       "tipoEntrada": "DESPESA"
     }
