@@ -16,7 +16,7 @@
                     metodoParaRetorno(categorias.categorias, nil);
                 });
             } else {
-                NSLog(@"Erro ao converter json: %@", jsonError);
+                NSLog(@"Erro ao converter json: %@", jsonError	);
             }
             
         } else {

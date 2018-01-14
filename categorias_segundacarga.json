@@ -1,1 +1,14 @@
-{"categorias":[{"descricao": “Receita de segunda carga”,"id": 3,"tipoEntrada": "RECEITA"},{"descricao": “Despesa de segunda carga”,"id": 4,"tipoEntrada": "DESPESA"}]}
+{
+  "categorias": [
+    {
+      "descricao": “Receita de segunda carga”,
+      "id": 3,
+      "tipoEntrada": "RECEITA"
+    },
+    {
+      “descricao": “Despesa de segunda carga”,
+      "id": 4,
+      "tipoEntrada": "DESPESA"
+    }
+  ]
+}
