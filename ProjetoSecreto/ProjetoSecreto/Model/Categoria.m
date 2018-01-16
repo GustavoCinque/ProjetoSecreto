@@ -7,3 +7,6 @@
 @implementation Categorias
 
 @end
+@implementation RootCategoria
+
+@end

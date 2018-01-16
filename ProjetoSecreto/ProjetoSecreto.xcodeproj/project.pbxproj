@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		301853C9200EB21F005CF43D /* EntradaTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 301853C7200EB21F005CF43D /* EntradaTableController.m */; };
+		301853CD200EB4C3005CF43D /* Entrada.m in Sources */ = {isa = PBXBuildFile; fileRef = 301853CC200EB4C3005CF43D /* Entrada.m */; };
+		301853D0200EB526005CF43D /* EntradaDao.m in Sources */ = {isa = PBXBuildFile; fileRef = 301853CF200EB526005CF43D /* EntradaDao.m */; };
 		30CA36ED200B968600CE8CD3 /* CargaCategoriaStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30CA36EC200B968600CE8CD3 /* CargaCategoriaStoryboard.storyboard */; };
 		30CA36F1200B979A00CE8CD3 /* CargaCategoriaStoryboardController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30CA36F0200B979A00CE8CD3 /* CargaCategoriaStoryboardController.m */; };
 		AD614C661FFFFF20002DC400 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AD614C5D1FFFFF20002DC400 /* Info.plist */; };
@@ -32,6 +35,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		301853C6200EB21F005CF43D /* EntradaTableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EntradaTableController.h; sourceTree = "<group>"; };
+		301853C7200EB21F005CF43D /* EntradaTableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EntradaTableController.m; sourceTree = "<group>"; };
+		301853CB200EB4C3005CF43D /* Entrada.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Entrada.h; sourceTree = "<group>"; };
+		301853CC200EB4C3005CF43D /* Entrada.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Entrada.m; sourceTree = "<group>"; };
+		301853CE200EB526005CF43D /* EntradaDao.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EntradaDao.h; sourceTree = "<group>"; };
+		301853CF200EB526005CF43D /* EntradaDao.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EntradaDao.m; sourceTree = "<group>"; };
 		30CA36EC200B968600CE8CD3 /* CargaCategoriaStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CargaCategoriaStoryboard.storyboard; sourceTree = "<group>"; };
 		30CA36EF200B979A00CE8CD3 /* CargaCategoriaStoryboardController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CargaCategoriaStoryboardController.h; sourceTree = "<group>"; };
 		30CA36F0200B979A00CE8CD3 /* CargaCategoriaStoryboardController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CargaCategoriaStoryboardController.m; sourceTree = "<group>"; };
@@ -84,6 +93,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		301853C2200EB205005CF43D /* EntradaTableController */ = {
+			isa = PBXGroup;
+			children = (
+				301853C6200EB21F005CF43D /* EntradaTableController.h */,
+				301853C7200EB21F005CF43D /* EntradaTableController.m */,
+			);
+			path = EntradaTableController;
+			sourceTree = "<group>";
+		};
 		30CA36EE200B975800CE8CD3 /* CargaCategoriaStoryboard */ = {
 			isa = PBXGroup;
 			children = (
@@ -180,6 +198,7 @@
 		AD614C912000E02A002DC400 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				301853C2200EB205005CF43D /* EntradaTableController */,
 				30CA36EE200B975800CE8CD3 /* CargaCategoriaStoryboard */,
 				AD614CA92000E1E8002DC400 /* PrincipalController */,
 			);
@@ -192,6 +211,8 @@
 				AD614C932000E02A002DC400 /* Coredata */,
 				AD614CC92000EBC5002DC400 /* CategoriaDao.h */,
 				AD614CCA2000EBC5002DC400 /* CategoriaDao.m */,
+				301853CE200EB526005CF43D /* EntradaDao.h */,
+				301853CF200EB526005CF43D /* EntradaDao.m */,
 			);
 			path = Dao;
 			sourceTree = "<group>";
@@ -234,6 +255,8 @@
 			children = (
 				AD614CD62000FD2E002DC400 /* Categoria.h */,
 				AD614CD72000FD2E002DC400 /* Categoria.m */,
+				301853CB200EB4C3005CF43D /* Entrada.h */,
+				301853CC200EB4C3005CF43D /* Entrada.m */,
 			);
 			name = Model;
 			path = ProjetoSecreto/Model;
@@ -383,9 +406,11 @@
 				ADF5E2752003FFB100886A3E /* JSONHTTPClient.m in Sources */,
 				ADF5E2742003FFB100886A3E /* JSONAPI.m in Sources */,
 				AD614CD82000FD2E002DC400 /* Categoria.m in Sources */,
+				301853CD200EB4C3005CF43D /* Entrada.m in Sources */,
 				AD614CCB2000EBC5002DC400 /* CategoriaDao.m in Sources */,
 				AD614C9B2000E02A002DC400 /* ProjetoSecreto.xcdatamodeld in Sources */,
 				ADF5E2722003FFB100886A3E /* JSONModelClassProperty.m in Sources */,
+				301853D0200EB526005CF43D /* EntradaDao.m in Sources */,
 				AD614C9D2000E02A002DC400 /* main.m in Sources */,
 				AD614CAD2000E1E8002DC400 /* PrincipalController.m in Sources */,
 				ADF5E2712003FFB100886A3E /* JSONModel.m in Sources */,
@@ -395,6 +420,7 @@
 				ADF5E2732003FFB100886A3E /* JSONModelError.m in Sources */,
 				AD614C9C2000E02A002DC400 /* AppDelegate.m in Sources */,
 				AD614CD52000FCFA002DC400 /* CategoriaService.m in Sources */,
+				301853C9200EB21F005CF43D /* EntradaTableController.m in Sources */,
 				ADF5E2762003FFB100886A3E /* JSONModel+networking.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

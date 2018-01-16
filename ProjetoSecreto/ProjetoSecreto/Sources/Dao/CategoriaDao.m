@@ -11,16 +11,18 @@
 
 @implementation CategoriaDao
 
+- (DBCategoria *) newInstance {
+    DBCategoria *c = [NSEntityDescription insertNewObjectForEntityForName:NSStringFromClass([DBCategoria class]) inManagedObjectContext:[CategoriaDao context]];
+    return c;
+}
+
 + (NSManagedObjectContext*)context{
     AppDelegate *appDelegate = (AppDelegate *) [[UIApplication sharedApplication] delegate];
     return appDelegate.persistentContainer.viewContext;
 }
 
-- (BOOL) salvar:(DBCategoria*) categoria {
+- (BOOL) salvar{
     NSManagedObjectContext *context = [CategoriaDao context];
-    
-    categoria.idCategoria = [CategoriaDao pesquisarUltimoId:context];
-    
     NSError *error;
     return [context save:&error];
 }
@@ -31,21 +33,14 @@
     [context save:nil];
 }
 
-+ (NSArray<DBCategoria*>*) pesquisarTodos:(NSManagedObjectContext*) context {
-    if(!context){
-        context = [CategoriaDao context];
-    }
+- (NSArray<DBCategoria*>*) pesquisarTodos {
     NSFetchRequest *request = [DBCategoria fetchRequest];
     NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"idCategoria" ascending:YES];
     NSArray *sortDescriptors = [NSArray arrayWithObject:sortDescriptor];
     [request setSortDescriptors:sortDescriptors];
     NSError *error;
-    NSArray *array = [context executeFetchRequest:request error:&error];
+    NSArray *array = [[CategoriaDao context] executeFetchRequest:request error:&error];
     return array;
-}
-
-+ (NSInteger) pesquisarUltimoId:(NSManagedObjectContext*) context {
-    return [[[CategoriaDao pesquisarTodos:context] lastObject] idCategoria];
 }
 
 

@@ -12,7 +12,8 @@
 #import "DBCategoria+CoreDataClass.h"
 
 @interface CargaCategoriaStoryboardController ()
-@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *spinner;
+
+@property (strong, nonatomic) IBOutlet UIActivityIndicatorView *spinner;
 
 @property(strong, nonatomic) CategoriaService *categoriaService;
 
@@ -28,7 +29,14 @@
     self.categoriaService = [CategoriaService new];
     self.categoriaDao = [CategoriaDao new];
     
-    [_spinner startAnimating];
+    self.spinner = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
+    
+    self.spinner.autoresizingMask = (UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleBottomMargin | UIViewAutoresizingFlexibleTopMargin);
+    
+    self.spinner.center = CGPointMake([[UIScreen mainScreen]bounds].size.width/2, [[UIScreen mainScreen]bounds].size.height/2);
+    
+    [self.spinner startAnimating];
+    
     if([self.carga intValue] == 1) {
         [self.categoriaService carregarPrimeiraCargaCategorias:^(NSArray<Categoria *> *categorias, NSError *error) {
             if (error) {
@@ -42,7 +50,6 @@
                 NSLog(@"Erro: %@", error.localizedDescription);
             }
             [self carregarCargaCategorias: categorias];
-            
         }];
     }
     
@@ -52,21 +59,37 @@
     [super didReceiveMemoryWarning];
 }
 
-- (void) carregarCargaCategorias:(NSArray<Categoria *>*) categorias {
-    for (Categoria *categoria in categorias) {
-        [self.categoriaDao salvar:[self criarDBCategoria: categoria]];
-    }
+- (void) carregarCargaCategorias:(NSArray<Categoria *>*) categorias{
+    NSString *mensagem = [NSString stringWithFormat:@"Confirma a inclusão de %lu nova(s) categoria(s)?", categorias.count];
     
-    [_spinner stopAnimating];
-    [self dismissViewControllerAnimated:YES completion:nil];
+    UIAlertController *confirmaInclusaoCategorias = [UIAlertController alertControllerWithTitle:@"Categorias" message:mensagem preferredStyle:UIAlertControllerStyleAlert];
+    
+    UIAlertAction *acaoNao = [UIAlertAction actionWithTitle:@"Não" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+        [self.spinner stopAnimating];
+        [self dismissViewControllerAnimated:YES completion:nil];
+    }];
+    
+    UIAlertAction *acaoSim = [UIAlertAction actionWithTitle:@"Sim" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        for (Categoria *categoria in categorias) {
+            [self criarDBCategoria: categoria];
+            [self.categoriaDao salvar];
+        }
+        
+        [self.spinner stopAnimating];
+        [self dismissViewControllerAnimated:YES completion:nil];
+    }];
+    
+    [confirmaInclusaoCategorias addAction:acaoNao];
+    [confirmaInclusaoCategorias addAction:acaoSim];
+    
+    [self presentViewController:confirmaInclusaoCategorias animated:YES completion:nil];
 }
 
-- (DBCategoria*) criarDBCategoria:(Categoria*)categoria{
-    DBCategoria *dbCategoria = [DBCategoria new];
+- (void) criarDBCategoria:(Categoria*)categoria{
+    DBCategoria *dbCategoria = [self.categoriaDao newInstance];
     dbCategoria.descricao = categoria.descricao;
-    dbCategoria.idCategoria = categoria.idCategoria;
+    dbCategoria.idCategoria = [categoria.idCategoria integerValue];
     dbCategoria.tipoEntrada = categoria.tipoEntrada;
-    return dbCategoria;
 }
 
 @end

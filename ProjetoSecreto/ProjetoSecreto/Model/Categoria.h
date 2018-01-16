@@ -22,6 +22,12 @@
 
 @interface Categorias : JSONModel
 
-@property(nonatomic, strong) NSArray<Categoria> *categorias;
+@property(nonatomic, strong) NSMutableArray<Categoria> *categoria;
+
+@end
+
+@interface RootCategoria : JSONModel
+
+@property (nonatomic, strong) Categorias *categorias;
 
 @end

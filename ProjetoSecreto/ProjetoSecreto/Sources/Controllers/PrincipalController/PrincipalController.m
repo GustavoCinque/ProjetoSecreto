@@ -15,16 +15,14 @@
     [super didReceiveMemoryWarning];
 }
 
-- (IBAction)adicionarPrimeiraCarga:(id)sender {
-    CargaCategoriaStoryboardController *newView = [CargaCategoriaStoryboardController new];
-    newView.carga = [NSNumber numberWithInt:1];
-    [self.view addSubview:newView.view];
-}
-
-- (IBAction)adicionarSegundaCarga:(id)sender {
-    CargaCategoriaStoryboardController *newView = [CargaCategoriaStoryboardController new];
-    newView.carga = [NSNumber numberWithInt:2];
-    [self.view addSubview:newView.view];
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if([segue.identifier isEqualToString:@"primeiraCarga"]) {
+        CargaCategoriaStoryboardController *destino = segue.destinationViewController;
+        destino.carga = [NSNumber numberWithInt:1];
+    } else if([segue.identifier isEqualToString:@"segundaCarga"]) {
+        CargaCategoriaStoryboardController *destino = segue.destinationViewController;
+        destino.carga = [NSNumber numberWithInt:2];
+    }
 }
 
 @end

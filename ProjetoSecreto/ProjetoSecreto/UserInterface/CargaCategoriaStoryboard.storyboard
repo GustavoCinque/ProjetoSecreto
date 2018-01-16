@@ -12,30 +12,29 @@
         <!--Carga Categoria Storyboard Controller-->
         <scene sceneID="6Tf-80-ghJ">
             <objects>
-                <viewController modalPresentationStyle="overCurrentContext" id="fJJ-gU-PyP" customClass="CargaCategoriaStoryboardController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="cargaCategoriaID" modalPresentationStyle="overCurrentContext" id="fJJ-gU-PyP" customClass="CargaCategoriaStoryboardController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="I83-RY-P7m"/>
                         <viewControllerLayoutGuide type="bottom" id="n9x-GX-GfH"/>
                     </layoutGuides>
-                    <view key="view" alpha="0.20000000000000001" contentMode="scaleToFill" id="Kfp-Cg-H8n">
+                    <view key="view" alpha="0.59999999999999998" contentMode="scaleToFill" id="Kfp-Cg-H8n">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="NJm-Pd-CZi">
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="T6d-oa-Kny">
                                 <rect key="frame" x="169" y="315" width="37" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="color" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="spinner" destination="NJm-Pd-CZi" id="aeg-4w-J6q"/>
+                        <outlet property="spinner" destination="T6d-oa-Kny" id="UoM-Vk-IBO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kIH-lr-TMa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="58" y="89"/>
+            <point key="canvasLocation" x="-210" y="20"/>
         </scene>
     </scenes>
 </document>

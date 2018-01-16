@@ -11,8 +11,9 @@
 
 @interface CategoriaDao : NSObject
 
-- (BOOL) salvar:(DBCategoria*) categoria;
+- (DBCategoria*) newInstance;
+- (BOOL) salvar;
 - (void) remover:(DBCategoria*) categoria;
-- (NSArray<DBCategoria*>*) pesquisarTodos:(NSManagedObjectContext*) context;
+- (NSArray<DBCategoria*>*) pesquisarTodos
 
 @end
