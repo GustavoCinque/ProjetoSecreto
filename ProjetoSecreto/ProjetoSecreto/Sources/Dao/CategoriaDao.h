@@ -14,6 +14,6 @@
 - (DBCategoria*) newInstance;
 - (BOOL) salvar;
 - (void) remover:(DBCategoria*) categoria;
-- (NSArray<DBCategoria*>*) pesquisarTodos
+- (NSArray<DBCategoria*>*) pesquisarTodos;
 
 @end

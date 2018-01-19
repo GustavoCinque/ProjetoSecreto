@@ -17,7 +17,7 @@
                         <viewControllerLayoutGuide type="top" id="I83-RY-P7m"/>
                         <viewControllerLayoutGuide type="bottom" id="n9x-GX-GfH"/>
                     </layoutGuides>
-                    <view key="view" alpha="0.59999999999999998" contentMode="scaleToFill" id="Kfp-Cg-H8n">
+                    <view key="view" alpha="0.40000000000000002" contentMode="scaleToFill" id="Kfp-Cg-H8n">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>

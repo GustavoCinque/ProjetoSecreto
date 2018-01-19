@@ -12,6 +12,10 @@
 		301853D0200EB526005CF43D /* EntradaDao.m in Sources */ = {isa = PBXBuildFile; fileRef = 301853CF200EB526005CF43D /* EntradaDao.m */; };
 		30CA36ED200B968600CE8CD3 /* CargaCategoriaStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30CA36EC200B968600CE8CD3 /* CargaCategoriaStoryboard.storyboard */; };
 		30CA36F1200B979A00CE8CD3 /* CargaCategoriaStoryboardController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30CA36F0200B979A00CE8CD3 /* CargaCategoriaStoryboardController.m */; };
+		30FFF95920114DEE0006124D /* EntradaTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 30FFF95720114DEE0006124D /* EntradaTableCell.m */; };
+		30FFF95A20114DEE0006124D /* EntradaTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30FFF95820114DEE0006124D /* EntradaTableCell.xib */; };
+		30FFF95C20115C340006124D /* EntradaStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30FFF95B20115C340006124D /* EntradaStoryboard.storyboard */; };
+		30FFF960201165A40006124D /* EntradaStoryboardController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30FFF95F201165A40006124D /* EntradaStoryboardController.m */; };
 		AD614C661FFFFF20002DC400 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AD614C5D1FFFFF20002DC400 /* Info.plist */; };
 		AD614C671FFFFF20002DC400 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD614C601FFFFF20002DC400 /* Assets.xcassets */; };
 		AD614C681FFFFF20002DC400 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD614C621FFFFF20002DC400 /* LaunchScreen.storyboard */; };
@@ -44,6 +48,12 @@
 		30CA36EC200B968600CE8CD3 /* CargaCategoriaStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CargaCategoriaStoryboard.storyboard; sourceTree = "<group>"; };
 		30CA36EF200B979A00CE8CD3 /* CargaCategoriaStoryboardController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CargaCategoriaStoryboardController.h; sourceTree = "<group>"; };
 		30CA36F0200B979A00CE8CD3 /* CargaCategoriaStoryboardController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CargaCategoriaStoryboardController.m; sourceTree = "<group>"; };
+		30FFF95620114DEE0006124D /* EntradaTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EntradaTableCell.h; sourceTree = "<group>"; };
+		30FFF95720114DEE0006124D /* EntradaTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EntradaTableCell.m; sourceTree = "<group>"; };
+		30FFF95820114DEE0006124D /* EntradaTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EntradaTableCell.xib; sourceTree = "<group>"; };
+		30FFF95B20115C340006124D /* EntradaStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = EntradaStoryboard.storyboard; sourceTree = "<group>"; };
+		30FFF95E201165A40006124D /* EntradaStoryboardController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EntradaStoryboardController.h; sourceTree = "<group>"; };
+		30FFF95F201165A40006124D /* EntradaStoryboardController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EntradaStoryboardController.m; sourceTree = "<group>"; };
 		AD614C3F1FFFFCDF002DC400 /* ProjetoSecreto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjetoSecreto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD614C5D1FFFFF20002DC400 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AD614C601FFFFF20002DC400 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -98,6 +108,9 @@
 			children = (
 				301853C6200EB21F005CF43D /* EntradaTableController.h */,
 				301853C7200EB21F005CF43D /* EntradaTableController.m */,
+				30FFF95620114DEE0006124D /* EntradaTableCell.h */,
+				30FFF95720114DEE0006124D /* EntradaTableCell.m */,
+				30FFF95820114DEE0006124D /* EntradaTableCell.xib */,
 			);
 			path = EntradaTableController;
 			sourceTree = "<group>";
@@ -109,6 +122,15 @@
 				30CA36F0200B979A00CE8CD3 /* CargaCategoriaStoryboardController.m */,
 			);
 			path = CargaCategoriaStoryboard;
+			sourceTree = "<group>";
+		};
+		30FFF95D2011657F0006124D /* EntradaStoryboard */ = {
+			isa = PBXGroup;
+			children = (
+				30FFF95E201165A40006124D /* EntradaStoryboardController.h */,
+				30FFF95F201165A40006124D /* EntradaStoryboardController.m */,
+			);
+			path = EntradaStoryboard;
 			sourceTree = "<group>";
 		};
 		AD614C361FFFFCDF002DC400 = {
@@ -178,6 +200,7 @@
 				AD614C621FFFFF20002DC400 /* LaunchScreen.storyboard */,
 				AD614C641FFFFF20002DC400 /* Main.storyboard */,
 				30CA36EC200B968600CE8CD3 /* CargaCategoriaStoryboard.storyboard */,
+				30FFF95B20115C340006124D /* EntradaStoryboard.storyboard */,
 			);
 			path = UserInterface;
 			sourceTree = "<group>";
@@ -198,6 +221,7 @@
 		AD614C912000E02A002DC400 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				30FFF95D2011657F0006124D /* EntradaStoryboard */,
 				301853C2200EB205005CF43D /* EntradaTableController */,
 				30CA36EE200B975800CE8CD3 /* CargaCategoriaStoryboard */,
 				AD614CA92000E1E8002DC400 /* PrincipalController */,
@@ -390,7 +414,9 @@
 				30CA36ED200B968600CE8CD3 /* CargaCategoriaStoryboard.storyboard in Resources */,
 				AD614C681FFFFF20002DC400 /* LaunchScreen.storyboard in Resources */,
 				AD614C671FFFFF20002DC400 /* Assets.xcassets in Resources */,
+				30FFF95C20115C340006124D /* EntradaStoryboard.storyboard in Resources */,
 				ADF5E2702003FFB100886A3E /* Info.plist in Resources */,
+				30FFF95A20114DEE0006124D /* EntradaTableCell.xib in Resources */,
 				AD614C661FFFFF20002DC400 /* Info.plist in Resources */,
 				AD614C691FFFFF20002DC400 /* Main.storyboard in Resources */,
 			);
@@ -410,11 +436,13 @@
 				AD614CCB2000EBC5002DC400 /* CategoriaDao.m in Sources */,
 				AD614C9B2000E02A002DC400 /* ProjetoSecreto.xcdatamodeld in Sources */,
 				ADF5E2722003FFB100886A3E /* JSONModelClassProperty.m in Sources */,
+				30FFF960201165A40006124D /* EntradaStoryboardController.m in Sources */,
 				301853D0200EB526005CF43D /* EntradaDao.m in Sources */,
 				AD614C9D2000E02A002DC400 /* main.m in Sources */,
 				AD614CAD2000E1E8002DC400 /* PrincipalController.m in Sources */,
 				ADF5E2712003FFB100886A3E /* JSONModel.m in Sources */,
 				ADF5E2782003FFB100886A3E /* JSONValueTransformer.m in Sources */,
+				30FFF95920114DEE0006124D /* EntradaTableCell.m in Sources */,
 				ADF5E2772003FFB100886A3E /* JSONKeyMapper.m in Sources */,
 				30CA36F1200B979A00CE8CD3 /* CargaCategoriaStoryboardController.m in Sources */,
 				ADF5E2732003FFB100886A3E /* JSONModelError.m in Sources */,

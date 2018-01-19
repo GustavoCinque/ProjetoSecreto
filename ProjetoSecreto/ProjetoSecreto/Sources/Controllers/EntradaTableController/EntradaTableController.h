@@ -10,4 +10,7 @@
 
 @interface EntradaTableController : UITableViewController
 
+@property (strong, nonatomic) IBOutlet UILabel *somatorioReceitas;
+@property (strong, nonatomic) IBOutlet UILabel *somatorioDespesas;
+
 @end

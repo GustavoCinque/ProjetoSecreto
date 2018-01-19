@@ -10,10 +10,12 @@
 #import "EntradaDao.h"
 #import "Entrada.h"
 #import "CategoriaDao.h"
+#import "DBCategoria+CoreDataClass.h"
+#import "DBEntrada+CoreDataClass.h"
+#import "EntradaTableCell.h"
+#import "EntradaStoryboardController.h"
 
 @interface EntradaTableController ()
-@property (strong, nonatomic) IBOutlet UILabel *somatorioReceitas;
-@property (strong, nonatomic) IBOutlet UILabel *somatorioDespesas;
 
 @property(nonatomic, strong) EntradaDao *entradaDao;
 @property(nonatomic, strong) NSMutableArray<Entrada*> *entradas;
@@ -59,6 +61,10 @@
     
     
     self.count = [NSNumber numberWithUnsignedInteger:self.entradas.count];
+    
+    [self.tableView registerNib:[UINib nibWithNibName:@"EntradaTableCell" bundle:nil] forCellReuseIdentifier:@"entradaCell"];
+    
+    
 }
 
 - (void) didReceiveMemoryWarning {
@@ -77,11 +83,22 @@
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    EntradaTableCell *cell = [tableView dequeueReusableCellWithIdentifier:@"entradaCell" forIndexPath:indexPath];
+    
+    [cell inserirElementos:self.entradas[indexPath.row]];
     
     return cell;
 }
 
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    EntradaStoryboardController *destino = segue.destinationViewController;
+    if([segue.identifier isEqualToString:@"adicionaReceita"]) {
+        destino.receita = YES;
+    } else if([segue.identifier isEqualToString:@"segundaCarga"]) {
+        destino.receita = NO;
+    }
+}
 
 /*
 // Override to support conditional editing of the table view.
